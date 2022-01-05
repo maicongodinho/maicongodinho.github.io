@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "blog": {
+    "website": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "blog:build:production"
+              "browserTarget": "website:build:production"
             },
             "development": {
-              "browserTarget": "blog:build:development"
+              "browserTarget": "website:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "blog:build"
+            "browserTarget": "website:build"
           }
         },
         "test": {
@@ -116,7 +116,7 @@
       }
     }
   },
-  "defaultProject": "blog",
+  "defaultProject": "website",
   "cli": {
     "defaultCollection": "@angular-eslint/schematics"
   }
