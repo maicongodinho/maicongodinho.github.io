@@ -1,0 +1,27 @@
+.shell {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+
+  .shell__section.header {
+    flex: 0 1 auto;
+
+    header {
+      height: 48px;
+      background-color: #161616;
+    }
+  }
+
+  .shell__section.content {
+    flex: 1 1 auto;
+  }
+
+  .shell__section.footer {
+    flex: 0 1 auto;
+
+    footer {
+      height: 48px;
+      background-color: #161616;
+    }
+  }
+}
